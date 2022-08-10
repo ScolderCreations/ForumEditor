@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <head>
-
+  <link href="./style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
-  
+<body style="width=100vw; align-items: center; float: center;">
+  <select id="emoji" translate="no"><option><span class="material-icons">face</span></option></select>
+  <textarea>
+    
+  </textarea>
+  <script>
+    let ID = Document.getElementById,
+    textbox = () => {return Document.querySelector("textarea")};
+    ID("emoji").addEventListener("click", () => {ID("emojidropdown")})
+  </script>
 </body>
